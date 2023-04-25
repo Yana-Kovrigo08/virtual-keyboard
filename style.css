@@ -1,0 +1,119 @@
+/*body{
+    margin: 0;
+}
+.container{
+    padding: 50px;
+}
+.keyboard{
+    display: block;
+    border: 2px solid black;
+    padding: 5px;
+    margin: 0 auto;
+    width: 1000px;
+    height: 300px;
+}
+
+.keyboard ::after{
+content: "";
+display: block;
+clear: both;
+}
+.text {
+    width: 100%;
+    height: 90px;
+    margin-bottom: 30px;
+    border: none;
+    outline: none;
+    font-size: 26px;
+    background-color: #f7f7f7;
+    padding-left: 10px;
+    transition: .2s;
+}
+.k-key{
+    width: 50px;
+    height: 50px;
+    border: 1px solid black;
+    margin: 3px;
+    padding: 3px;
+    float: left;
+}
+
+.clearfix{
+    clear: both;
+}
+.active{
+    background-color: orangered;
+}*/
+body{
+    background-color: rgb(26, 26, 26);
+    font-family: sans-serif;
+  }
+.container{
+    width: 500px;
+    min-height: 100px;
+    box-shadow: -3px -3px 5px rgb(63, 63, 63) , 3px 3px 5px black;
+    text-align: center;
+    color: white;
+    letter-spacing: 1px;
+    position: absolute;
+    top: 165px;
+    left: 50%;
+    margin: -90px auto;
+    transform:translateX(-50%) ;
+    font-size: 18px;
+    text-transform: capitalize;
+}
+.keybord{
+    box-shadow: -3px -3px 5px rgb(63, 63, 63) , 3px 3px 5px black;
+    width: 90%;
+    margin:200px auto 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding:20px 20px;
+    border-radius: 10px;
+}
+.row{
+    margin:5px ;
+    user-select: none;
+}
+ button{
+    width: 50px;
+    height: 50px;
+    font-weight: bold;
+    margin: 0 4px;
+    border: none;
+    background-color: transparent;
+    color:white;
+    box-shadow: -2px -2px 4px rgb(63, 63, 63) , 2px 2px 4px black;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+ .delete , .space{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.keybord .delete , .space{
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    /* user-select: none; */
+}
+.keybord .space{
+    width: 300px;
+    height: 50px;
+}
+.keybord .delete {
+    width: 100px;
+    height: 50px;
+}
+.keybord .active{
+    box-shadow:inset -2px -2px 4px rgb(63, 63, 63) ,inset 2px 2px 4px black;
+    color: yellow;
+}
+
+.row-five, .row-one{
+    display: flex;
+}
